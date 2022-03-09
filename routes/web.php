@@ -25,7 +25,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 
 Route::get('/landing', [\App\Http\Controllers\HomeController::class, 'index'])->name('main.landing');
-Route::get('/form/', [\App\Http\Controllers\HomeController::class, 'form'])->name('applicants.form');
+Route::get('/forms/', [\App\Http\Controllers\HomeController::class, 'form'])->name('applicants.form');
 
 Route::post('/form/submit', [\App\Http\Controllers\HomeController::class, 'submit'])->name('applicants.form.submit');
 Route::get('/form/success', [\App\Http\Controllers\HomeController::class, 'success'])->name('applicants.form.success');
