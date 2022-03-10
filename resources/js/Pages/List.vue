@@ -15,6 +15,7 @@
                             <table class="w-full">
                                 <thead>
                                 <tr class="text-md font-semibold tracking-wide text-left text-gray-900 bg-gray-100 uppercase border-b border-gray-600">
+                                    <th class="px-4 py-3">Date Submitted</th>
                                     <th class="px-4 py-3">Name</th>
                                     <th class="px-4 py-3">Contact</th>
                                     <th class="px-4 py-3">Sex</th>
@@ -27,6 +28,16 @@
                                 <tbody class="bg-white">
 
                                 <tr v-for="(applicant, index) in applicants" :key="applicant.id" class="text-gray-700" >
+
+                                  <td class="px-4 py-3 border">
+                                        <div class="flex items-center text-sm" @click="">
+                                            <div>
+                                                <Link class="font-semibold text-black cursor-pointer hover:text-blue-500" :href="route('admin.applicants.view', applicant.id)"> 
+                                                    {{formatDate(applicant.created_at)}}
+                                                </Link>
+                                            </div>
+                                        </div>
+                                  </td>
 
                                   <td class="px-4 py-3 border">
                                         <div class="flex items-center text-sm" @click="">
@@ -160,6 +171,11 @@
                 }
 
                 return status;
+            },
+
+            formatDate(timeStamp) {
+                let date = new Date(timeStamp);
+                return date.toLocaleString('default', {month: 'long'}) + ' ' + date.getDate() + ', ' + date.getFullYear()
             },
         },
     };
