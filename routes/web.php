@@ -32,8 +32,6 @@ Route::get('/form/success', [\App\Http\Controllers\HomeController::class, 'succe
 Route::get('/main/success', [\App\Http\Controllers\HomeController::class, 'landingSuccess'])->name('landing.success');
 
 
-
-
 Route::group(['prefix' => 'admin', 'as' => 'admin.',], function () {
 
 	/** APPLICANTS ROUTE **/
