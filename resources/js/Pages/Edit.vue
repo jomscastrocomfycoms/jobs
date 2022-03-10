@@ -83,20 +83,20 @@
                         <p>Province: {{applicant.province}}</p>
                         <p>Postal Code: {{applicant.postal_code}}</p>
                       </div>
-<!-- 
+
                       <div class="my-3">
                         <span class="text-lg font-bold">Questions</span>
-                        <p>Question 1: {{form.question_1}}</p>
-                        <p>Question 2: {{form.question_2}}</p>
-                        <p>Question 3: {{form.question_3}}</p>
-                        <p>Question 4: {{form.question_4}}</p>
-                        <p>Question 5: {{form.question_5}}</p>
-                        <p>Question 6: {{form.question_6}}</p>
-                        <p>Question 7: {{form.question_7}}</p>
-                        <p>Question 8: {{form.question_8}}</p>
-                        <p>Question 9: {{form.question_9}}</p>
-                        <p>Question 10: {{form.question_10}}</p>
-                      </div> -->
+                        <p>Question 1: {{applicant.question_1}}</p>
+                        <p>Question 2: {{applicant.question_2}}</p>
+                        <p>Question 3: {{applicant.question_3}}</p>
+                        <p>Question 4: {{applicant.question_4}}</p>
+                        <p>Question 5: {{applicant.question_5}}</p>
+                        <p>Question 6: {{applicant.question_6}}</p>
+                        <p>Question 7: {{applicant.question_7}}</p>
+                        <p>Question 8: {{applicant.question_8}}</p>
+                        <p>Question 9: {{applicant.question_9}}</p>
+                        <p>Question 10: {{applicant.question_10}}</p>
+                      </div>
 
                         </div>
 
